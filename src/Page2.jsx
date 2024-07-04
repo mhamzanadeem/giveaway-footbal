@@ -14,9 +14,9 @@ import useImage from "use-image";
 
 const Page2 = () => {
   const [image] = useImage("test.jpg");
-  const [image1] = useImage("../src/assets/blackArrow.png");
-  const [image2] = useImage("../src/assets/greenArrow.png");
-  const [image3] = useImage("../src/assets/firerings.png");
+  const [image1] = useImage("blackArrow.png");
+  const [image2] = useImage("greenArrow.png");
+  const [image3] = useImage("firerings.png");
   const [imageDimensions, setImageDimensions] = useState({
     width: 0,
     height: 0,
@@ -26,7 +26,7 @@ const Page2 = () => {
       setImageDimensions({ width: 700, height: 650 });
     }
   }, [image]);
-  
+
   return (
     <div
       style={{
